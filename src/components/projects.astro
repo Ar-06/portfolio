@@ -1,13 +1,13 @@
 ---
 import { Image } from "astro:assets";
-import svgl from "../../public/svgl.png";
-import stockin from "../../public/stockin.png";
-import moviesfordevs from "../../public/moviesfordevs.png";
-import tron from "../../public/tron.png";
+import moviesFinder from "../../public/moviesFinder.png"
+import safeHome from "../../public/safeHome.png"
+import umbra from "../../public/umbra.png"
+import unamPix from "../../public/unamPix.png"
 
 interface Project {
   title: string;
-  image: ImageMetadata;
+  image: ImageMetadata | null;
   link: string;
   preview: string;
   status: string;
@@ -16,31 +16,31 @@ interface Project {
 const projects: Project[] = [
   {
     title: "MoviesFinder",
-    image: moviesfordevs as ImageMetadata,
-    link: "https://github.com/gothsec/MoviesForDevs",
-    preview: "https://movies-for-devs.vercel.app",
+    image: moviesFinder as ImageMetadata,
+    link: "https://github.com/Ar-06/MoviesFinder.git",
+    preview: "https://movies-finder-gules.vercel.app",
     status: "Terminado",
   },
   {
     title: "UnamPix",
-    image: stockin as ImageMetadata,
+    image: unamPix as ImageMetadata,
     link: "https://github.com/gothsec/stockin-demo",
     preview: "https://stockin-demo.vercel.app",
     status: "On Development",
   },
   {
     title: "SafeHome",
-    image: svgl as ImageMetadata,
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Contributor",
+    image: safeHome as ImageMetadata,
+    link: "https://github.com/Ar-06/SafeHome",
+    preview: "https://github.com/Ar-06/SafeHome",
+    status: "Terminado",
   },
   {
-    title: "E-commerce",
-    image: tron as ImageMetadata,
+    title: "Umbra",
+    image: umbra as ImageMetadata,
     link: "https://github.com/Gothsec/Tron-Legacy-web",
-    preview: "https://tron-legacy-web.vercel.app/",
-    status: "Template (not official)",
+    preview: "https://ar-06.itch.io/umbra",
+    status: "Terminado",
   },
 ];
 ---
